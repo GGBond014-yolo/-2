@@ -1,6 +1,6 @@
 const weddingDate = new Date('2026-10-25T11:58:00+08:00')
 // 需要真实收集宾客名单时，只需粘贴第三方表单的公开填写链接；留空则保持本地演示模式。
-const RSVP_FORM_URL = ''
+const RSVP_FORM_URL = 'https://www.kdocs.cn/l/ci6yDx3ZOR72'
 document.querySelector('#days-count').textContent = String(Math.max(0, Math.ceil((weddingDate.getTime() - Date.now()) / 86400000)))
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
